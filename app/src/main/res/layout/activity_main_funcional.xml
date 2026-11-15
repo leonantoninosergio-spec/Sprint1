@@ -22,25 +22,34 @@
         android:textSize="25dp"
         android:text="¿Quien es?:" />
 
-    <RadioButton
-        android:id="@+id/radioButton"
+    <RadioGroup
+        android:id="@+id/radioGroupOpciones"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Spiderman" />
+        android:orientation="vertical">
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Peter Parker" />
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spiderman" />
 
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="El hombre araña" />
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peter Parker" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="El hombre araña" />
+
+    </RadioGroup>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputEditText"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:hint="">

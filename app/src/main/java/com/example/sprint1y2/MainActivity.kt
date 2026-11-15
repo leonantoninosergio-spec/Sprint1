@@ -1,47 +1,33 @@
-package com.example.sprint1y2
+package com.example.sprint1y2 // Mantén tu paquete actual
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.sprint1y2.ui.theme.Sprint1y2Theme
+import android.widget.RadioButton
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.textfield.TextInputEditText
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            Sprint1y2Theme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
+        setContentView(R.layout.activity_main_funcional) // Vincula con tu archivo XML
+
+        // 1. Referenciamos los componentes de tu XML por sus IDs
+        val rbSpiderman = findViewById<RadioButton>(R.id.radioButton)
+        val rbPeter = findViewById<RadioButton>(R.id.radioButton2)
+        val rbHombreArana = findViewById<RadioButton>(R.id.radioButton3)
+
+        // 2. Programamos los eventos de los RadioButtons de forma correcta
+        rbSpiderman.setOnClickListener {
+            Toast.makeText(this, "¡Correcto! Es Spiderman", Toast.LENGTH_SHORT).show()
         }
-    }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+        rbPeter.setOnClickListener {
+            Toast.makeText(this, "¡También es correcto (su identidad secreta)!", Toast.LENGTH_SHORT).show()
+        }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Sprint1y2Theme {
-        Greeting("Android")
+        rbHombreArana.setOnClickListener {
+            Toast.makeText(this, "¡Exacto, traducción literal!", Toast.LENGTH_SHORT).show()
+        }
     }
 }
