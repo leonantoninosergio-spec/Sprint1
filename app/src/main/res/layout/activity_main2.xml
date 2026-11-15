@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título principal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ejemplo de componentes\nAndroid"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Sección de Información -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Componentes para mostrar información"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Este texto se muestra mediante un TextView."
+            android:textSize="12sp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Imagen central (Logo Android) -->
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Barra de Progreso -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Progreso: 50%"
+            android:textSize="12sp"/>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="50"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- VideoView simulado -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VideoView"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@android:color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- WebView -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WebView"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developers"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="#EEEEEE"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Sección de Entrada e Interacción -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Componentes de entrada e interacción"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce tu nombre"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Checkboxes de tecnologías -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona tecnologías:"
+            android:layout_marginBottom="4dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="React"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flutter"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- RadioGroup de modalidades -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona una modalidad:"
+            android:layout_marginBottom="4dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Presencial"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mixta"/>
+        </RadioGroup>
+
+        <!-- Notificaciones y Curso -->
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notificaciones"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona un curso:"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- SeekBar -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nivel seleccionado: 50"
+            android:layout_marginBottom="4dp"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="50"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Botón Guardar -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar información"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Resultado final -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aquí aparecerá el resultado"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>
